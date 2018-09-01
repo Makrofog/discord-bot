@@ -2,6 +2,10 @@ import random
 import discord
 from discord import Game
 from discord.ext.commands import Bot
+from discord.ext import commands
+import asyncio
+import time
+import os
 
 BOT_PREFIX= "."
 TOKEN = "NDUwNDM3NDc0OTUxNjI2NzUz.Dmqusw.TI9ft6al2xLlhk5aBVA7ETEqQ60"

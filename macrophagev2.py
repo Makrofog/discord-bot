@@ -86,6 +86,23 @@ async def regulamin():
 	embed.add_field(name="zakaz reklamy", value="Prosimy nie reklamowac sie na serwerze", inline=False)
 
 	await client.say(embed=embed)
+	
+	
+newUserMessage =  """ **WITAJ**
+
+➤Mamy nadzieję że będziesz się dobrze bawić :*
+
+➤Pamiętaj żeby przestrzegać regulaminu
+
+➤Jeśli potrzebujesz pomocy napisz do administracji
+
+"""
+
+@client.event
+async def on_member_join(member):
+    print("Recognised that a member called " + member.name + " joined")
+    await client.send_message(member, newUserMessage)
+    print("Sent message to " + member.name)
 
 
 
